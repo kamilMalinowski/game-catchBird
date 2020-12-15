@@ -1,0 +1,55 @@
+// html
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// body
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+// main - game
+.birdGame {
+  background: brown;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+// header
+.birdGame-header {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: tomato;
+  &__title {
+    font-size: 24px;
+  }
+  &__description {
+    font-size: 16px;
+  }
+  &__span {
+    color: white;
+  }
+}
+
+// game - area
+.birdGame-area {
+  width: 500px;
+  height: 500px;
+  background: green;
+  &__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: yellow;
+    outline: none;
+  }
+}

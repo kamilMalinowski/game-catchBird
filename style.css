@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.body {
+  margin: 0;
+  padding: 0; }
+
+.birdGame {
+  background: brown;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.birdGame-header {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: tomato; }
+  .birdGame-header__title {
+    font-size: 24px; }
+  .birdGame-header__description {
+    font-size: 16px; }
+  .birdGame-header__span {
+    color: white; }
+
+.birdGame-area {
+  width: 500px;
+  height: 500px;
+  background: green; }
+  .birdGame-area__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: yellow;
+    outline: none; }
