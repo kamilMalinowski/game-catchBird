@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch Bird</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body class="body">
+    <!-- main -->
+    <main class="birdGame">
+      <!-- header -->
+      <header class="birdGame-header">
+        <h1 class="birdGame-header__title">Catch Birds</h1>
+        <p class="birdGame-header__description">
+          Score: <span class="birdGame-header__span points--js">0</span> points
+        </p>
+        <p class="birdGame-header__description">
+          Remaining time:
+          <span class="birdGame-header__span seconds--js">?</span> seconds
+        </p>
+      </header>
+
+      <!-- game -->
+      <div class="birdGame-area gameArea--js">
+        <button class="birdGame-area__button button--js">bird</button>
+      </div>
+    </main>
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
