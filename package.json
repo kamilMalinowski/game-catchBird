@@ -1,0 +1,23 @@
+{
+  "name": "game-catchbird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass -w style.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilMalinowski/game-catchBird.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilMalinowski/game-catchBird/issues"
+  },
+  "homepage": "https://github.com/kamilMalinowski/game-catchBird#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
