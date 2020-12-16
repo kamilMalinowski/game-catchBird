@@ -34,8 +34,17 @@ html {
   height: 500px;
   background: green; }
   .birdGame-area__button {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
     background: yellow;
-    outline: none; }
+    outline: none;
+    width: 100px;
+    height: 100px; }
+  .birdGame-area__img {
+    width: 98px;
+    height: 98px;
+    margin: 0;
+    padding: 0;
+    border-radius: 90px; }
