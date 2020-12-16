@@ -11,7 +11,7 @@ html {
   padding: 0; }
 
 .birdGame {
-  background: brown;
+  background: burlywood;
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -32,19 +32,21 @@ html {
 .birdGame-area {
   width: 500px;
   height: 500px;
-  background: green; }
+  background: coral; }
   .birdGame-area__button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     border-radius: 50px;
-    background: yellow;
     outline: none;
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    border: none;
+    color: black; }
   .birdGame-area__img {
-    width: 98px;
-    height: 98px;
+    width: 90px;
+    height: 90px;
     margin: 0;
     padding: 0;
     border-radius: 90px; }
