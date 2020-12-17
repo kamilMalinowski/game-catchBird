@@ -27,13 +27,25 @@ html {
   line-height: 20px;
   margin: 0;
   padding: 0 10px;
-  background: url("/bird_bg.jpg") center;
+  background: url("bird_bg.jpg") center;
   background-size: cover;
   text-shadow: 1px 2px 2px #000000; }
   .birdGame-header__title {
     font-size: 40px; }
+    @media (max-width: 768px) {
+      .birdGame-header__title {
+        font-size: 30px; } }
+    @media (max-width: 425px) {
+      .birdGame-header__title {
+        font-size: 20px; } }
   .birdGame-header__description {
     font-size: 20px; }
+    @media (max-width: 768px) {
+      .birdGame-header__description {
+        font-size: 16px; } }
+    @media (max-width: 425px) {
+      .birdGame-header__description {
+        font-size: 12px; } }
   .birdGame-header__span {
     color: #fb2d47; }
 
@@ -41,11 +53,10 @@ html {
   line-height: 5px; }
 
 .birdGame-area {
-  border: 1px solid #25b883;
   width: 90%;
   padding: 20px;
   margin: 25px;
-  height: 60vh; }
+  height: 80vh; }
   .birdGame-area__button {
     margin: 0;
     font-family: "Concert One", cursive;
@@ -61,6 +72,12 @@ html {
     border: none;
     background: #25b883;
     color: white; }
+    .birdGame-area__button:hover {
+      outline: none; }
+    .birdGame-area__button:active {
+      outline: none; }
+    .birdGame-area__button:focus {
+      outline: none; }
   .birdGame-area__img {
     width: 46px;
     height: 46px;

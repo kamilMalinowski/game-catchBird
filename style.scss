@@ -13,7 +13,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-  outline: none;
 }
 
 // body
@@ -48,14 +47,21 @@ html {
   text-shadow: 1px 2px 2px #000000;
   &__title {
     font-size: 40px;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media (max-width: 425px) {
       font-size: 20px;
     }
   }
+
   &__description {
     font-size: 20px;
-    @media (max-width: 500px) {
+    @media (max-width: 768px) {
       font-size: 16px;
+    }
+    @media (max-width: 425px) {
+      font-size: 12px;
     }
   }
   &__span {
@@ -68,7 +74,6 @@ html {
 }
 // game - area
 .birdGame-area {
-  border: 1px solid $green;
   width: 90%;
   padding: 20px;
   margin: 25px;
