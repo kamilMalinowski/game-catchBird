@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 html {
   box-sizing: border-box; }
 
@@ -11,39 +12,48 @@ html {
   padding: 0; }
 
 .birdGame {
-  background: burlywood;
   display: flex;
   align-items: center;
   flex-direction: column; }
 
 .birdGame-header {
+  color: black;
+  font-family: "Concert One", cursive;
   text-align: center;
   width: 100%;
+  line-height: 20px;
   margin: 0;
   padding: 0;
-  background: tomato; }
+  background: #fb2d47; }
   .birdGame-header__title {
-    font-size: 24px; }
+    font-size: 60px; }
   .birdGame-header__description {
-    font-size: 16px; }
+    font-size: 40px; }
   .birdGame-header__span {
     color: white; }
 
 .birdGame-area {
-  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
   height: 500px;
-  background: coral; }
+  background: #2a9173; }
   .birdGame-area__button {
+    font-family: "Concert One", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 30px;
     border-radius: 50px;
     outline: none;
     width: 100px;
     height: 100px;
     border: none;
-    color: black; }
+    background: #25b883;
+    color: white; }
   .birdGame-area__img {
     width: 90px;
     height: 90px;
