@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 //colors
-$yellowDark: #baa235;
 $green: #25b883;
 $greenDark: #2a9173;
 $red: #fb2d47;
@@ -20,6 +19,7 @@ html {
 .body {
   margin: 0;
   padding: 0;
+  background-color: $greenDark;
 }
 
 // main - game
@@ -27,56 +27,64 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (orientation: portrait) {
+  }
 }
 
 // header
 .birdGame-header {
-  color: black;
+  border: 1px solid $red;
+  transition: 2s;
+  color: white;
   font-family: "Concert One", cursive;
-  text-align: center;
+  text-align: left;
   width: 100%;
   line-height: 20px;
   margin: 0;
-  padding: 0;
-  background: $red;
+  padding: 0 10px;
+  background: url("/bird_bg.jpg") center;
+  background-size: cover;
+  text-shadow: 1px 2px 2px #000000;
   &__title {
-    font-size: 60px;
-  }
-  &__description {
     font-size: 40px;
   }
+  &__description {
+    font-size: 20px;
+  }
   &__span {
-    color: white;
+    color: $red;
   }
 }
 
+.header--small {
+  line-height: 5px;
+}
 // game - area
 .birdGame-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  height: 500px;
-  background: $greenDark;
+  border: 1px solid $green;
+  width: 90%;
+  padding: 20px;
+  margin: 25px;
+  height: 60vh;
   &__button {
+    margin: 0;
     font-family: "Concert One", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 50px;
     outline: none;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: none;
     background: $green;
     color: white;
   }
   &__img {
-    width: 90px;
-    height: 90px;
+    width: 46px;
+    height: 46px;
     margin: 0;
     padding: 0;
     border-radius: 90px;

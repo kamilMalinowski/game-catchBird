@@ -2,8 +2,9 @@
 const button = document.querySelector(".button--js");
 const points = document.querySelector(".points--js");
 const seconds = document.querySelector(".seconds--js");
+const header = document.querySelector(".header--js");
 
-// generate random image number
+//generate random image number
 function getRandomImg(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -11,8 +12,8 @@ function getRandomImg(min, max) {
 }
 
 //time limit
-let timeLimit = 11;
-let reset = "...";
+let timeLimit = 21;
+let reset = "Good job. Play again for 3..2..1..go!";
 
 let intervalID = setInterval(() => {
   timeLimit--;
@@ -23,7 +24,7 @@ let intervalID = setInterval(() => {
     button.disabled = true;
     setInterval(() => {
       window.location.reload(true);
-    }, 1000);
+    }, 3000);
   }
 }, 500);
 
@@ -39,6 +40,7 @@ function getRandomNumber(min, max) {
 
 //button
 button.addEventListener("click", () => {
+  header.classList.add("header--small");
   points.innerHTML++;
   let image = getRandomImg(1, 10);
   const imageTemplate = `<img class="birdGame-area__img img--js" src="birds/${image}.jpg" alt="bird ${image}">`;
@@ -46,9 +48,15 @@ button.addEventListener("click", () => {
   timeLimit++;
   let buttonWidth = button.offsetWidth;
   let buttonHeight = button.offsetHeight;
-  let leftRandom = getRandomNumber(50, button.parentElement.offsetWidth);
-  let topRandom = getRandomNumber(0, button.parentElement.offsetHeight);
+  let leftRandom = getRandomNumber(
+    buttonWidth,
+    button.parentElement.offsetWidth - buttonWidth
+  );
+  let topRandom = getRandomNumber(
+    buttonHeight,
+    button.parentElement.offsetHeight - buttonHeight
+  );
 
-  button.style.marginLeft = getNumberWidthUnits(leftRandom - buttonWidth, "px");
-  button.style.marginTop = getNumberWidthUnits(topRandom - buttonHeight, "px");
+  button.style.marginLeft = getNumberWidthUnits(leftRandom, "px");
+  button.style.marginTop = getNumberWidthUnits(topRandom, "px");
 });

@@ -9,7 +9,8 @@ html {
 
 .body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: #2a9173; }
 
 .birdGame {
   display: flex;
@@ -17,46 +18,52 @@ html {
   flex-direction: column; }
 
 .birdGame-header {
-  color: black;
+  border: 1px solid #fb2d47;
+  transition: 2s;
+  color: white;
   font-family: "Concert One", cursive;
-  text-align: center;
+  text-align: left;
   width: 100%;
   line-height: 20px;
   margin: 0;
-  padding: 0;
-  background: #fb2d47; }
+  padding: 0 10px;
+  background: url("/bird_bg.jpg") center;
+  background-size: cover;
+  text-shadow: 1px 2px 2px #000000; }
   .birdGame-header__title {
-    font-size: 60px; }
-  .birdGame-header__description {
     font-size: 40px; }
+  .birdGame-header__description {
+    font-size: 20px; }
   .birdGame-header__span {
-    color: white; }
+    color: #fb2d47; }
+
+.header--small {
+  line-height: 5px; }
 
 .birdGame-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  height: 500px;
-  background: #2a9173; }
+  border: 1px solid #25b883;
+  width: 90%;
+  padding: 20px;
+  margin: 25px;
+  height: 60vh; }
   .birdGame-area__button {
+    margin: 0;
     font-family: "Concert One", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 50px;
     outline: none;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: none;
     background: #25b883;
     color: white; }
   .birdGame-area__img {
-    width: 90px;
-    height: 90px;
+    width: 46px;
+    height: 46px;
     margin: 0;
     padding: 0;
     border-radius: 90px; }
